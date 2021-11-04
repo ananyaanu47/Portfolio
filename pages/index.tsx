@@ -1,11 +1,12 @@
 
   import {services} from '../data'
   import ServiceCard  from '../components/Servicecard'
- 
+ import { GetServerSideProps } from "next"
+ import { GetServerSidePropsContext } from "next"
 
   
- const index= () => {
-   //console.log(endpoint);
+ const index= ({endpoint}) => {
+   console.log(endpoint);
    
  return (
     <div className ='flex flex-col flex-grow px-6 pt-1 text-red-600 dark:bg-dark-100'>
@@ -33,14 +34,15 @@
   };
  
  
-  //export const getServerSideProps =async  (context:GetServerSidePropsContext) => {
-   
-     
-     // return {
-     // props:{ endpoint:process.env.VERCEL_URL}
-     // };
-  
-     // };
+  export const getServerSideProps: GetServerSideProps = async (
+       context: GetServerSidePropsContext
+     ) => {
+        //console.log(process.env.VERCEL_URL);
+        //const res = await fetch('http://localhost:3000/api/services');
+        //const data = await res.json();
+        //console.log(data);
+        return { props: { endpoint:process.env.VERCEL_URL  } };
+     };
       export default index;
  
 
