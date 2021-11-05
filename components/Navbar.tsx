@@ -1,5 +1,5 @@
 
-import Link from 'next/Link'
+import Link from 'next/link'
 import { FunctionComponent,useEffect, useState} from 'react'
 import {useRouter} from 'next/router'
 
