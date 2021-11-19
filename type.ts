@@ -10,3 +10,13 @@ export  interface Iskill{
     level:string,
     Icon:IconType,
 }
+export interface IProject {
+    name: string;
+    description: string;
+    image_path: string;
+    deployed_url: string;
+    category: Category[];
+   
+  }
+  
+  export type Category = "Language" | "Iot";

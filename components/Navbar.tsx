@@ -43,7 +43,7 @@ useEffect(() =>{
          <div className='text-base font-normal md:text-xl'>   
 
             < NavItem  activeItem={activeItem} setActiveItem={setActiveItem} name="About" route="/" />
-            < NavItem  activeItem={activeItem} setActiveItem={setActiveItem} name="Projects" route="/projects" />
+            < NavItem  activeItem={activeItem} setActiveItem={setActiveItem} name="Courses" route="/projects" />
             < NavItem  activeItem={activeItem} setActiveItem={setActiveItem} name="Resume" route="/skills" />
     </div>
         </div>

@@ -1,5 +1,5 @@
-import { Iskill, IService } from './type';
- 
+import { Iskill, IService ,IProject} from './type';
+import Image from "next/image";
   import { SiCodio } from 'react-icons/si'
  import{ MdDeveloperMode,MdOutlineLanguage} from 'react-icons/md'
  import {IoLogoPython} from 'react-icons/io'
@@ -54,3 +54,29 @@ import { Iskill, IService } from './type';
  },
  
 ]
+
+
+export const projects: IProject[] = [
+    { 
+      name: "Programing Languages",
+      description:
+        "I have taken this course in order to improve my Programing skills",
+      image_path: "/images/programing.png",
+      deployed_url: "https://codersera.com/blog/best-programming-languages-for-beginners/"   ,
+      category: ["Language"],
+      
+    },
+    
+    { 
+      name: "IOT",
+      description:
+        "I have taken this course in order to improve my Technical skills",
+      image_path: "/images/bolt.png",
+      deployed_url: "https://www.boltiot.com/"   ,
+      category: ["Iot"],
+      
+      
+    },
+    
+  ];
+  

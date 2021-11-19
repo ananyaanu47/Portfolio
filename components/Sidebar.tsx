@@ -61,7 +61,7 @@ onClick={changeTheme}
             <span>Mysore,Karntaka</span>
         </div>
             <p >ananyaanju4@gmail.com</p>
-            <p className='my-2'>91+9058940372</p>
+            <p className='my-2'>+91 9058940372</p>
     </div>
        
      
