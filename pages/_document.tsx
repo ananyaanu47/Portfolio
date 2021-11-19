@@ -9,7 +9,7 @@ class MyDocument extends Document {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"/>
             </Head>
-        <body className ="bg-gradient-to-r from-blue-400 to-pink-400 dark:from-dark-500 to dark-700">
+            <body className="bg-fixed bg-gradient-to-r from-pink-800 to-yellow-300 dark:from-dark-500 dark:to-dark-700 dark:text-white">
 
           <Main />
           <NextScript />

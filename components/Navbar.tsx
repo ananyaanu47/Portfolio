@@ -1,5 +1,5 @@
 
-import Link from 'next/Link'
+import Link from 'next/link'
 import { FunctionComponent,useEffect, useState} from 'react'
 import {useRouter} from 'next/router'
 
@@ -12,7 +12,9 @@ route:string
     return  activeItem !== name ?(  
                 <Link href={route}>
               <a>
-                  <span onClick={()=>setActiveItem(name)} className='hover:text-red-600'>
+                  <span 
+                  className='mx-2 cursor-pointer hover:border-b-4 hover:text-pink-700'
+                  onClick={()=>setActiveItem(name)} >
                       {name}</span >
                   </a>
                   </Link> 
@@ -36,9 +38,9 @@ useEffect(() =>{
 
 
     return (
-    <div className='flex justify-between px-5 py-3 my-3 dark:bg-dark-200'>
-        <span className='font-bold text-red-900 border-b-4 border-red-900 md:text-2x1 dark:bg-dark-200 '> {activeItem}</span>
-         <div className='flex space-x-6 text-lg text-blue-900 dark:bg-dark-200'>   
+    <div className='flex items-center justify-between px-5 py-3 my-3'>
+        <span className='text-xl font-bold border-b-4 border-pink-700 md:text-2xl'> {activeItem}</span>
+         <div className='text-base font-normal md:text-xl'>   
 
             < NavItem  activeItem={activeItem} setActiveItem={setActiveItem} name="About" route="/" />
             < NavItem  activeItem={activeItem} setActiveItem={setActiveItem} name="Projects" route="/projects" />

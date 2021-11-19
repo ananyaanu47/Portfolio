@@ -1,8 +1,6 @@
 
-import {AiFillGithub,AiFillLinkedin,AiOutlineBook} from 'react-icons/ai'
-import {GoLocation} from 'react-icons/go'
-
-import {GiTie  } from "react-icons/gi";
+import {AiFillGithub,AiFillLinkedin,AiOutlineBook} from 'react-icons/ai';
+import {GoLocation} from 'react-icons/go';
 import { useTheme } from 'next-themes';
 import Image from 'next/image'
 
@@ -16,8 +14,8 @@ const Sidebar = () => {
 
 
     return (
-        <div className='dark:bg-dark-200'>
-             <h3 className='italic font-extrabold text-red-900 text-3x1'> <span> Hello There</span> </h3>
+       <>
+             <h3 className='italic font-extrabold text-red-900 text-2x1'> <span> Hello There</span> </h3>
             <Image
         src="/images/img3.jpeg"
         alt="Landscape"
@@ -26,11 +24,11 @@ const Sidebar = () => {
         className="mx-auto border rounded-full"
         quality="100"
        />
-            <h3 className='my-1 font-extrabold tracking-wider font-large text-3x1 font-Kaushan '> 
-            <span className='text-red-900 text-x2'> ANANYA </span> Here  </h3>
-             <p className='px-2 bg-green-200 rounded-full dark:bg-dark-200 py-1my-3'>Student in JSSSTU</p> 
+            <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan" > 
+            <span className="text-red-600 "> ANANYA </span> Here  </h3>
+             <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">Student in JSSSTU</p> 
 
-             <a className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-300 dark:bg-200 justify-items-center '
+             <a className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
              href='../resume/resume.pdf' download='ANANYA RESUME.pdf'>
                  <AiOutlineBook className="w-6 h-6"/>Check out <br /> MY Resume</a>
 
@@ -49,7 +47,7 @@ onClick={changeTheme}
         <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
     </a>
     </div>
-    <div className='flex justify-around my-6 text-gray-500'>
+    <div className='flex justify-around my-6 text-gray-600'>
     <a  href='https://github.com/ananyaanu47'>
         <AiFillGithub className='w-8 h-8 cursor-pointer' />
     </a>
@@ -57,7 +55,7 @@ onClick={changeTheme}
 </div>
 
 {/*//ADDRESS*/}
-    <div className='px-4 my-5 bg-yellow-200 dark:bg-dark-200' style={{marginLeft: '-1rem',marginRight: '-1rem'}}>
+    <div className='px-4 my-5 bg-gray-200 dark:bg-dark-200 dark:bg-black-500' style={{marginLeft: '-1rem',marginRight: '-1rem'}}>
         <div className='flex items-center justify-center space-x-2'>
             <GoLocation />
             <span>Mysore,Karntaka</span>
@@ -69,8 +67,8 @@ onClick={changeTheme}
      
 
    
-</div>
-    )
-}
+</>
+    );
+};
 
 export default Sidebar
